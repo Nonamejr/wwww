@@ -233,3 +233,24 @@ document.querySelector("#submit17").onclick = function(){
     let seconds = date.getSeconds();
     alert(hours + ":" + minutes + ":" + seconds);
 }
+
+// 20, 23, 6, 9, 8, 8, 25, 13, 18, 4, 4, 4,  
+
+// const a = 1.5
+// const b = 0.75
+// alert(a+b)
+
+// const a = -100
+// alert(a)
+
+// const a = 1.5
+// alert(-a)
+
+// const a = 13
+// const b = 5
+// alert(a%b)
+
+// let a = 2
+// alert(a ** 10)
+
+// 24, 186, 48, 
