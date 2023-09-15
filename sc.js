@@ -170,7 +170,7 @@ document.querySelector("#submit8").onclick = function(){
 
 document.querySelector("#submit9").onclick = function(){
     const a = 77;
-    const b = 520;
+    const b = 52;
     const c = a + b;
     const d = 7;
     const result = c + d;
