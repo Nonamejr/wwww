@@ -231,5 +231,5 @@ document.querySelector("#submit17").onclick = function(){
     let hours = date.getHours();
     let minutes = date.getMinutes();
     let seconds = date.getSeconds();
-    alert(hours + "." + minutes + "." + seconds);
+    alert(hours + ":" + minutes + ":" + seconds);
 }
