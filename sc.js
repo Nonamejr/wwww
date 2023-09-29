@@ -196,6 +196,7 @@ document.querySelector("#submit8").onclick = function(){
 }
 
 document.querySelector("#submit9").onclick = function(){
+<<<<<<< HEAD
     let num = prompt ('Введите число: ');
     let w = num == 2 ? true: false;
     if (w == true) {
@@ -204,6 +205,14 @@ document.querySelector("#submit9").onclick = function(){
     } else {
         alert("неверно")
         }
+=======
+    const a = 77;
+    const b = 52;
+    const c = a + b;
+    const d = 7;
+    const result = c + d;
+    prompt("Значение вычисления: " + result)
+>>>>>>> b79d2a11ca384aaf22041dd7fff08b91bd2edcec
 }
 
 document.querySelector("#submit10").onclick = function(){
@@ -301,6 +310,7 @@ document.querySelector("#submit16").onclick = function(){
 }
 
 document.querySelector("#submit17").onclick = function(){
+<<<<<<< HEAD
     let num = prompt ('Введите число: ');
     if (num/3 == 1) {
         alert("весна")
@@ -369,3 +379,32 @@ document.querySelector("#submit24").onclick = function(){
     let a = prompt("Ваше число")
     alert("квадрат вашего числа: " + a*a)
 }
+=======
+    let date = new Date();
+    let hours = date.getHours();
+    let minutes = date.getMinutes();
+    let seconds = date.getSeconds();
+    alert(hours + ":" + minutes + ":" + seconds);
+}
+
+// 20, 23, 6, 9, 8, 8, 25, 13, 18, 4, 4, 4,  
+
+// const a = 1.5
+// const b = 0.75
+// alert(a+b)
+
+// const a = -100
+// alert(a)
+
+// const a = 1.5
+// alert(-a)
+
+// const a = 13
+// const b = 5
+// alert(a%b)
+
+// let a = 2
+// alert(a ** 10)
+
+// 24, 186, 48, 
+>>>>>>> b79d2a11ca384aaf22041dd7fff08b91bd2edcec
