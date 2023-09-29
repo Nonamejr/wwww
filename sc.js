@@ -335,11 +335,9 @@ document.querySelector("#submit19").onclick = function(){
 
 document.querySelector("#submit20").onclick = function(){
     let str = prompt('123');
-    let num = Number(str)
-    let q = num[0]
-    let w = num[1]
-    let e = num[2]
-    alert(q + w + e)
+    let num = Number(str);
+    let sum = num[1] + num[0] + num[2];
+    alert(sum);
 }
 
 document.querySelector("#submit21").onclick = function(){
@@ -370,3 +368,27 @@ document.querySelector("#submit24").onclick = function(){
     alert("квадрат вашего числа: " + a*a)
 }
 
+function summa(arr) {
+    var sum = 0;
+        for(var i = 0; i < arr.length; i++) 
+        sum += arr[i];
+    return sum;}
+
+var array = [6, 8, 1];
+var array_2 = [6, 8, 1, 7];
+var array_3 = [6, 8, 1, 90];
+var res = summa(array);
+res *= 2;
+console.log("Результат: " + res);
+
+
+var num = 10;
+
+function info() { 
+    var num = 20; 
+    console.log(num);
+}
+
+info()
+
+console.log(num);
