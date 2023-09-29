@@ -118,118 +118,254 @@
 //    isClosed = true;
 //consolelog(isChecked || isClosed)
 document.querySelector("#submit1").onclick = function(){
-    let name = "jon";
-    let admin = name;
-    alert(admin);
+    let num = prompt ('Введите число: ');
+    if (num == 0) {
+        alert("Число равно нулю");
+        
+    } else {
+        alert("Число не равно нулю");
+        }
 }
 
 document.querySelector("#submit2").onclick = function(){
-    let planet = "zemlya";
-    let posyatitel = "vladimir";
-    console.log(planet, posyatitel)
+    let num = prompt ('Введите число: ');
+    if (num > 0) {
+        alert("Число число больше нуля");
+        
+    } else {
+        alert("Число меньше нуля");
+        }
 }
 
 document.querySelector("#submit3").onclick = function(){
-    let colorEyes = "red";
+    let num = prompt ('Введите число: ');
+    if (num < 0) {
+        alert("Число меньше нуля");
+    } else {
+        alert("Число больше нулю");
+        }
 }
 
 document.querySelector("#submit4").onclick = function(){
-    let userName = "vasya";
-    let user = userName;
-    console.log(userName);
+    let num = prompt ('Введите число: ');
+    if (num >= 0) {
+        alert("верно");
+        
+    } else {
+        alert("неверно");
+        }
 }
 
 document.querySelector("#submit5").onclick = function(){
-    const num = 10;
-    prompt(num);
+    let num = prompt ('Введите число: ');
+    if (num <= 0) {
+        alert("верно");
+        
+    } else {
+        alert("неверно");
+        }
 }
 
 document.querySelector("#submit6").onclick = function(){
-    const a = 15;
-    const b = 8;
-    const v = a+b;
-    const c = a-b;
-    const x = a*b;
-    const z = a/b;
-    console.log(v, c, x, z);
+    let num = prompt ('Введите число: ');
+    if (num != 0) {
+        alert("верно");
+        
+    } else {
+        alert("неверно");
+        }
 }
 
 document.querySelector("#submit7").onclick = function(){
-    const c = 35;
-    const d = 5;
-    const result = c + d;
-    prompt(result);
+    let num = prompt ('Введите слово: ');
+    if (num == "test") {
+        alert("верно");
+        
+    } else {
+        alert("неверно");
+        }
 }
 
 document.querySelector("#submit8").onclick = function(){
-    const q = 10;
-    const w = 22;
-    const e = 5;
-    console.log(q + w + e);
+    let num = prompt ('Введите число: ');
+    if (num == 1) {
+        alert("верно");
+    } else {
+        alert("неверно");
+        }
 }
 
 document.querySelector("#submit9").onclick = function(){
-    const a = 77;
-    const b = 520;
-    const c = a + b;
-    const d = 7;
-    const result = c + d;
-    prompt("Значение вычисления: " + result)
+    let num = prompt ('Введите число: ');
+    let w = num == 2 ? true: false;
+    if (w == true) {
+        alert("верно")
+        
+    } else {
+        alert("неверно")
+        }
 }
 
 document.querySelector("#submit10").onclick = function(){
-    let str = "Hello, World!";
-    alert(str);
+    let num = prompt ('Введите число: ');
+    let w = num == 2 ? true: false;
+    if (w == false) {
+        alert("верно")
+        
+    } else {
+        alert("неверно")
+        }
 }
 
 document.querySelector("#submit11").onclick = function(){
-    let str1 = "Hello,";
-    let str2 = " World!";
-    alert(str1 + str2);
+    let num = prompt ('Введите число: ');
+    if (num > 5) {
+        if (num < 5) {
+            alert("верно")
+        } else {
+            alert("неверно")
+        }
+    } else {
+        alert("неверно")
+    }
 }
 
 document.querySelector("#submit12").onclick = function(){
-    let name1 = "Lereos";
-    alert("Hello " + name1);
+    let num = prompt ('Введите число: ');
+    if (num == 2) {
+        alert(num + 7)
+    } if (num == 0) {
+        alert(num + 7)
+    } else {
+        alert(num / 10)
+    }
 }
 
 document.querySelector("#submit13").onclick = function(){
-    const age = 14;
-    alert("I am " + age + " years old");
+    let a = prompt ('Введите число: ');
+    let b = prompt ('Введите число: ');
+    if (a <= 1) {
+        if (b >= 5) {
+            alert(a+b)
+        } else {
+            alert(a-b)
+        }
+    } else {
+        alert(a-b)
+    }
 }
 
 document.querySelector("#submit14").onclick = function(){
-    let str = prompt("Your name ?");
-    alert("Your name is " + str);
+    let a = prompt ('Введите число: ');
+    let b = prompt ('Введите число: ');
+    if (a > 2) {
+        if (a < 11) {
+            if (b >= 6) {
+                if (a < 14) {
+                alert("Верно")
+            } else {
+                alert("Неверно")
+            }
+            }
+        } 
+    }
 }
 
 document.querySelector("#submit15").onclick = function(){
-    let str = prompt("Your number ?");
-    alert(str*str);
+    let num = prompt ('Введите число: ');
+    switch (num) {
+	    case 1:
+	    	alert("зима")
+	    break;
+	    case 2:
+	    	alert("весна")
+	    break;
+	    case 3:
+	    	alert("лето")
+	    break;
+	    default:
+	    	alert("осень")
+	    break;
+    }   
 }
 
 document.querySelector("#submit16").onclick = function(){
-    let str = prompt("1 - узнать сколько секунд в часе" / 
-    "2 - узнать сколько секунд в сутках" /
-    "3 - узнать сколько секунд в в месяце" / 
-    "4 - узнать сколько секунд в году");
-    if (str == 1) {
-        alert(60*60*60 + " секунд");
-    } else if (str == 2) {
-        alert(60*60*60*24 + " секунд");
-    } else if (str == 3) {
-        alert(60*60*60*24*31 + " секунд");
-    } else if (str == 4) {
-        alert(60*60*60*24*31*365 + " секунд");
-    } else {
-        alert("Wrong number");
+    let num = prompt ('Введите число: ');
+    if (num/10 == 1) {
+        alert("1 декада")
+    } if (num/10 == 2) {
+        alert("2 декада")
+    } if (num/10 == 3) {
+        alert("3 декада")
     }
 }
 
 document.querySelector("#submit17").onclick = function(){
-    let date = new Date();
-    let hours = date.getHours();
-    let minutes = date.getMinutes();
-    let seconds = date.getSeconds();
-    alert(hours + "." + minutes + "." + seconds);
+    let num = prompt ('Введите число: ');
+    if (num/3 == 1) {
+        alert("весна")
+    } if (num/3 == 2) {
+        alert("лето")
+    } if (num/3 == 3) {
+        alert("осень")
+    } if (num/3 == 4) {
+        alert("зима")
+    }
+}
+
+document.querySelector("#submit18").onclick = function(){
+    let str = prompt('abcde');
+
+    if (str[0] == "a") {
+	alert("да");
+    } else {
+        alert("нет")
+    }
+}
+
+document.querySelector("#submit19").onclick = function(){
+    let str = prompt('12345');
+
+    if (str[0] == "1" || "2" || "3") {
+	alert("да");
+    } else {
+        alert("нет")
+    }
+}
+
+document.querySelector("#submit20").onclick = function(){
+    let str = prompt('123');
+    let num = Number(str)
+    let q = num[0]
+    let w = num[1]
+    let e = num[2]
+    alert(q + w + e)
+}
+
+document.querySelector("#submit21").onclick = function(){
+    let num = '123033';
+    let sum1 = num[0] + num[1] + num[2];
+    let sum2 = num[3] + num[4] + num[5];
+
+if (sum1 == sum2) {
+	console.log('суммы равны');
+} else {
+	console.log('суммы не равны');
+}
+}
+
+document.querySelector("#submit22").onclick = function(){
+    let str1='Привет,'  
+    let str2='Мир!'
+    alert(str1+str2)
+}
+
+document.querySelector("#submit23").onclick = function(){
+    let a = prompt("Ваше имя?")
+    alert("Ваше имя " + a)
+}
+
+document.querySelector("#submit24").onclick = function(){
+    let a = prompt("Ваше число")
+    alert("квадрат вашего числа: " + a*a)
 }
