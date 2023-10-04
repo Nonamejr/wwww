@@ -160,7 +160,6 @@ document.querySelector("#submit5").onclick = function(){
     let num = prompt ('Введите число: ');
     if (num <= 0) {
         alert("верно");
-        
     } else {
         alert("неверно");
         }
@@ -170,7 +169,6 @@ document.querySelector("#submit6").onclick = function(){
     let num = prompt ('Введите число: ');
     if (num != 0) {
         alert("верно");
-        
     } else {
         alert("неверно");
         }
@@ -179,15 +177,14 @@ document.querySelector("#submit6").onclick = function(){
 document.querySelector("#submit7").onclick = function(){
     let num = prompt ('Введите слово: ');
     if (num == "test") {
-        alert("верно");
-        
+        alert("верно"); 
     } else {
         alert("неверно");
         }
 }
 
 document.querySelector("#submit8").onclick = function(){
-    let num = prompt ('Введите число: ');
+    let num = prompt('Введите число: ');
     if (num == 1) {
         alert("верно");
     } else {
@@ -210,8 +207,7 @@ document.querySelector("#submit10").onclick = function(){
     let num = prompt ('Введите число: ');
     let w = num == 2 ? true: false;
     if (w == false) {
-        alert("верно")
-        
+        alert("верно")    
     } else {
         alert("неверно")
         }
@@ -219,12 +215,8 @@ document.querySelector("#submit10").onclick = function(){
 
 document.querySelector("#submit11").onclick = function(){
     let num = prompt ('Введите число: ');
-    if (num > 5) {
-        if (num < 5) {
-            alert("верно")
-        } else {
-            alert("неверно")
-        }
+    if (num > 5 && num < 5) {
+        alert("верно")
     } else {
         alert("неверно")
     }
@@ -232,9 +224,7 @@ document.querySelector("#submit11").onclick = function(){
 
 document.querySelector("#submit12").onclick = function(){
     let num = prompt ('Введите число: ');
-    if (num == 2) {
-        alert(num + 7)
-    } if (num == 0) {
+    if (num == 2 || num == 0) {
         alert(num + 7)
     } else {
         alert(num / 10)
@@ -244,12 +234,8 @@ document.querySelector("#submit12").onclick = function(){
 document.querySelector("#submit13").onclick = function(){
     let a = prompt ('Введите число: ');
     let b = prompt ('Введите число: ');
-    if (a <= 1) {
-        if (b >= 5) {
-            alert(a+b)
-        } else {
-            alert(a-b)
-        }
+    if (a <= 1 && b >= 5) {
+        alert(a+b)
     } else {
         alert(a-b)
     }
@@ -258,18 +244,13 @@ document.querySelector("#submit13").onclick = function(){
 document.querySelector("#submit14").onclick = function(){
     let a = prompt ('Введите число: ');
     let b = prompt ('Введите число: ');
-    if (a > 2) {
-        if (a < 11) {
-            if (b >= 6) {
-                if (a < 14) {
-                alert("Верно")
-            } else {
-                alert("Неверно")
-            }
-            }
-        } 
+    if (a > 2 && a < 11 || b >= 6 && a < 14) {
+        alert("Верно")
+    } else {
+        alert("Неверно")
     }
 }
+
 
 document.querySelector("#submit15").onclick = function(){
     let num = prompt ('Введите число: ');
@@ -291,59 +272,67 @@ document.querySelector("#submit15").onclick = function(){
 
 document.querySelector("#submit16").onclick = function(){
     let num = prompt ('Введите число: ');
-    if (num/10 == 1) {
+    if (num/10 < 0) {
+        alert("Введите положительное число")
+    } if (num/10 > 0) {
         alert("1 декада")
-    } if (num/10 == 2) {
+    } if (num/10 > 1) {
         alert("2 декада")
-    } if (num/10 == 3) {
+    } if (num/10 > 2) {
         alert("3 декада")
+    } else {
+        alert("В месяце меньше дней")
     }
 }
 
 document.querySelector("#submit17").onclick = function(){
     let num = prompt ('Введите число: ');
-    if (num/3 == 1) {
+    if (num/3 < 0) {
+        alert("Введите положительное число")
+    } if (num/3 > 0) {
         alert("весна")
-    } if (num/3 == 2) {
+    } if (num/3 > 1) {
         alert("лето")
-    } if (num/3 == 3) {
+    } if (num/3 > 2) {
         alert("осень")
-    } if (num/3 == 4) {
+    } if (num/3 > 3) {
         alert("зима")
+    } else {
+        alert("В году меньше месяцев")
     }
 }
 
 document.querySelector("#submit18").onclick = function(){
-    let str = prompt('abcde');
+    let str = 'abcde';
 
     if (str[0] == "a") {
-	alert("да");
+	    alert("да");
     } else {
         alert("нет")
     }
 }
 
 document.querySelector("#submit19").onclick = function(){
-    let str = prompt('12345');
+    let str ='12345';
 
-    if (str[0] == "1" || "2" || "3") {
-	alert("да");
+    if (str[1] == "1" || "2" || "3") {
+	    alert("да");
     } else {
         alert("нет")
     }
 }
 
 document.querySelector("#submit20").onclick = function(){
-    let str = prompt('123');
-    let num = Number(str);
-    let sum = num[1] + num[0] + num[2];
+    let str = '123';
+    let sum = Number(str[0]) + Number(str[1]) + Number(str[2]);
     alert(sum);
 }
 
 document.querySelector("#submit21").onclick = function(){
-    let num = '123033';
-    let sum1 = num[0] + num[1] + num[2];
-    let sum2 = num[3] + num[4] + num[5];
+    let num = '123033'; // берем в кавычки, чтобы обращаться к цифрам
+
+let sum1 = Number(num[0]) + Number(num[1]) + Number(num[2]);
+let sum2 = Number(num[3]) + Number(num[4]) + Number(num[5]);
 
 if (sum1 == sum2) {
 	console.log('суммы равны');
@@ -368,27 +357,3 @@ document.querySelector("#submit24").onclick = function(){
     alert("квадрат вашего числа: " + a*a)
 }
 
-function summa(arr) {
-    var sum = 0;
-        for(var i = 0; i < arr.length; i++) 
-        sum += arr[i];
-    return sum;}
-
-var array = [6, 8, 1];
-var array_2 = [6, 8, 1, 7];
-var array_3 = [6, 8, 1, 90];
-var res = summa(array);
-res *= 2;
-console.log("Результат: " + res);
-
-
-var num = 10;
-
-function info() { 
-    var num = 20; 
-    console.log(num);
-}
-
-info()
-
-console.log(num);
